@@ -412,7 +412,7 @@
               class="setting-btn"
               @click="showMPCode"
             >
-              关注公众号【假装大佬】
+              加入QQ群【一站式大米提供服务】
             </el-tag>
             <el-tag
               type="info"
@@ -420,7 +420,7 @@
               class="setting-btn"
               @click="joinTGChannel"
             >
-              加入TG频道【假装大佬】
+              加入TG频道【MiACGN】
             </el-tag>
           </div>
         </div>
@@ -470,16 +470,6 @@
         </div>
       </div>
       <div class="bottom-icons">
-        <a href="https://github.com/hectorqin/reader" target="_blank">
-          <div class="bottom-icon">
-            <img
-              v-if="isNight"
-              :src="require('../assets/imgs/github.png')"
-              alt=""
-            />
-            <img v-else :src="require('../assets/imgs/github2.png')" alt="" />
-          </div>
-        </a>
         <span
           class="theme-item"
           :style="themeColor"
@@ -2746,10 +2736,10 @@ export default {
       eventBus.$emit("showUserManageDialog");
     },
     showMPCode() {
-      eventBus.$emit("showMPCodeDialog");
+      window.open("https://jq.qq.com/?_wv=1027&k=tHOqirGu", "_target");
     },
     joinTGChannel() {
-      window.open("https://t.me/facker_channel", "_target");
+      window.open("https://t.me/MiAcgn", "_target");
     },
     ensureLoadBookCover() {
       // 手动触发滚动事件，显示书籍封面图片
